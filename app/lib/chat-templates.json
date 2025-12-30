@@ -1,0 +1,69 @@
+{
+  "tones": [
+    { "id": "formal", "label": "Formal" },
+    { "id": "semi", "label": "Semi Formal" },
+    { "id": "santai", "label": "Santai" }
+  ],
+  "purposes": [
+    { "id": "izin_sakit", "label": "Izin Sakit", "requiresDetail": false },
+    { "id": "izin_acara", "label": "Izin Acara", "requiresDetail": true },
+    {
+      "id": "ingatkan_matkul",
+      "label": "Mengingatkan Ada Matkul",
+      "requiresDetail": false
+    },
+    { "id": "tanya_tugas", "label": "Tanya Tugas", "requiresDetail": false },
+    { "id": "tanya_nilai", "label": "Tanya Nilai", "requiresDetail": false },
+    {
+      "id": "tanya_lokasi",
+      "label": "Tanya Lokasi Saat Ini",
+      "requiresDetail": false
+    },
+    {
+      "id": "jadwal_bimbingan",
+      "label": "Minta Jadwal Bimbingan",
+      "requiresDetail": false
+    },
+    {
+      "id": "konsultasi_materi",
+      "label": "Konsultasi Materi",
+      "requiresDetail": false
+    },
+    { "id": "custom", "label": "Isi Sendiri (Custom)", "requiresDetail": true }
+  ],
+  "templates": {
+    "formal": {
+      "izin_sakit": "Assalamualaikum Wr. Wb.\n\nSelamat {waktu}, {nama_dosen}.\n\nPerkenalkan saya {nama_mahasiswa}, NIM {nim}.\n\nMohon maaf sebelumnya mengganggu waktu {nama_dosen}. Melalui pesan ini, saya bermaksud untuk memohon izin tidak dapat mengikuti perkuliahan hari ini dikarenakan sedang dalam kondisi kurang sehat.\n\nSaya akan melampirkan surat keterangan dokter sebagai bukti pendukung jika diperlukan.\n\nMohon izin dan pengertian dari {nama_dosen}. Terima kasih banyak atas perhatiannya.\n\nWassalamualaikum Wr. Wb.",
+      "izin_acara": "Assalamualaikum Wr. Wb.\n\nSelamat {waktu}, {nama_dosen}.\n\nPerkenalkan saya {nama_mahasiswa}, NIM {nim}.\n\nMohon maaf sebelumnya mengganggu waktu {nama_dosen}. Melalui pesan ini, saya bermaksud untuk memohon izin tidak dapat mengikuti perkuliahan dikarenakan ada keperluan acara yaitu: {detail_acara}.\n\nSaya akan mengganti materi yang tertinggal dan mengerjakan tugas yang diberikan.\n\nMohon izin dan pengertian dari {nama_dosen}. Terima kasih banyak atas perhatiannya.\n\nWassalamualaikum Wr. Wb.",
+      "ingatkan_matkul": "Assalamualaikum Wr. Wb.\n\nSelamat {waktu}, {nama_dosen}.\n\nPerkenalkan saya {nama_mahasiswa}, NIM {nim}.\n\nMohon maaf sebelumnya mengganggu waktu {nama_dosen}. Melalui pesan ini, saya ingin mengingatkan bahwa hari ini terdapat jadwal perkuliahan mata kuliah yang diampu oleh {nama_dosen}.\n\nApakah perkuliahan hari ini tetap berlangsung sesuai jadwal? Mohon informasinya.\n\nTerima kasih banyak atas perhatiannya.\n\nWassalamualaikum Wr. Wb.",
+      "tanya_tugas": "Assalamualaikum Wr. Wb.\n\nSelamat {waktu}, {nama_dosen}.\n\nPerkenalkan saya {nama_mahasiswa}, NIM {nim}.\n\nMohon maaf sebelumnya mengganggu waktu {nama_dosen}. Saya ingin menanyakan mengenai tugas yang telah diberikan.\n\nApakah {nama_dosen} berkenan memberikan penjelasan lebih lanjut terkait ketentuan atau deadline tugas tersebut?\n\nTerima kasih banyak atas perhatian dan waktunya.\n\nWassalamualaikum Wr. Wb.",
+      "tanya_nilai": "Assalamualaikum Wr. Wb.\n\nSelamat {waktu}, {nama_dosen}.\n\nPerkenalkan saya {nama_mahasiswa}, NIM {nim}.\n\nMohon maaf sebelumnya mengganggu waktu {nama_dosen}. Saya ingin menanyakan perihal nilai mata kuliah yang diampu oleh {nama_dosen}.\n\nApakah ada waktu yang bisa saya temui untuk berkonsultasi mengenai nilai tersebut?\n\nTerima kasih banyak atas perhatian dan waktunya.\n\nWassalamualaikum Wr. Wb.",
+      "tanya_lokasi": "Assalamualaikum Wr. Wb.\n\nSelamat {waktu}, {nama_dosen}.\n\nPerkenalkan saya {nama_mahasiswa}, NIM {nim}.\n\nMohon maaf sebelumnya mengganggu waktu {nama_dosen}. Saya ingin menanyakan apakah {nama_dosen} saat ini berada di kampus?\n\nSaya bermaksud untuk menemui {nama_dosen} jika berkenan. Mohon informasinya mengenai lokasi yang bisa saya temui.\n\nTerima kasih banyak atas perhatiannya.\n\nWassalamualaikum Wr. Wb.",
+      "jadwal_bimbingan": "Assalamualaikum Wr. Wb.\n\nSelamat {waktu}, {nama_dosen}.\n\nPerkenalkan saya {nama_mahasiswa}, NIM {nim}, mahasiswa bimbingan {nama_dosen}.\n\nMohon maaf sebelumnya mengganggu waktu {nama_dosen}. Saya bermaksud untuk memohon jadwal bimbingan.\n\nApakah {nama_dosen} memiliki waktu luang untuk saya temui? Mohon informasinya mengenai jadwal yang tersedia.\n\nTerima kasih atas perhatiannya.\n\nWassalamualaikum Wr. Wb.",
+      "konsultasi_materi": "Assalamualaikum Wr. Wb.\n\nSelamat {waktu}, {nama_dosen}.\n\nPerkenalkan saya {nama_mahasiswa}, NIM {nim}.\n\nMohon maaf sebelumnya mengganggu waktu {nama_dosen}. Saya ingin berkonsultasi mengenai materi perkuliahan yang telah disampaikan.\n\nApakah {nama_dosen} berkenan memberikan waktu untuk berdiskusi lebih lanjut? Mohon informasi jadwal yang tersedia.\n\nTerima kasih banyak atas perhatian dan bimbingannya.\n\nWassalamualaikum Wr. Wb.",
+      "custom": "Assalamualaikum Wr. Wb.\n\nSelamat {waktu}, {nama_dosen}.\n\nPerkenalkan saya {nama_mahasiswa}, NIM {nim}.\n\nMohon maaf sebelumnya mengganggu waktu {nama_dosen}. {detail_acara}\n\nTerima kasih banyak atas perhatian dan waktunya.\n\nWassalamualaikum Wr. Wb."
+    },
+    "semi": {
+      "izin_sakit": "Assalamualaikum {nama_dosen},\n\nSelamat {waktu}. Saya {nama_mahasiswa} ({nim}).\n\nMohon izin tidak bisa mengikuti perkuliahan hari ini karena sedang sakit. Jika diperlukan, saya bisa melampirkan surat dokter.\n\nTerima kasih atas pengertiannya, {nama_dosen}.\n\nWassalam.",
+      "izin_acara": "Assalamualaikum {nama_dosen},\n\nSelamat {waktu}. Saya {nama_mahasiswa} ({nim}).\n\nMohon izin tidak bisa hadir di perkuliahan karena ada acara: {detail_acara}.\n\nSaya akan menyusul materi yang tertinggal. Terima kasih atas pengertiannya.\n\nWassalam.",
+      "ingatkan_matkul": "Assalamualaikum {nama_dosen},\n\nSelamat {waktu}. Saya {nama_mahasiswa} ({nim}).\n\nMohon maaf mengganggu, saya ingin mengingatkan bahwa hari ini ada jadwal perkuliahan. Apakah kuliah hari ini jadi sesuai jadwal?\n\nTerima kasih sebelumnya.\n\nWassalam.",
+      "tanya_tugas": "Assalamualaikum {nama_dosen},\n\nSelamat {waktu}. Saya {nama_mahasiswa} ({nim}).\n\nMohon maaf mengganggu, saya ingin bertanya tentang tugas yang diberikan. Bisa tolong dijelaskan lebih lanjut mengenai ketentuan atau deadline-nya?\n\nTerima kasih sebelumnya.\n\nWassalam.",
+      "tanya_nilai": "Assalamualaikum {nama_dosen},\n\nSelamat {waktu}. Saya {nama_mahasiswa} ({nim}).\n\nMohon maaf mengganggu, saya ingin menanyakan tentang nilai. Apakah ada waktu untuk konsultasi?\n\nTerima kasih sebelumnya.\n\nWassalam.",
+      "tanya_lokasi": "Assalamualaikum {nama_dosen},\n\nSelamat {waktu}. Saya {nama_mahasiswa} ({nim}).\n\nMohon maaf mengganggu, apakah {nama_dosen} sedang ada di kampus? Saya ingin menemui jika berkenan.\n\nTerima kasih sebelumnya.\n\nWassalam.",
+      "jadwal_bimbingan": "Assalamualaikum {nama_dosen},\n\nSelamat {waktu}. Saya {nama_mahasiswa} ({nim}), mahasiswa bimbingan.\n\nMohon maaf mengganggu, saya ingin meminta jadwal bimbingan. Kapan {nama_dosen} ada waktu luang?\n\nTerima kasih sebelumnya.\n\nWassalam.",
+      "konsultasi_materi": "Assalamualaikum {nama_dosen},\n\nSelamat {waktu}. Saya {nama_mahasiswa} ({nim}).\n\nMohon maaf mengganggu, saya ingin konsultasi tentang materi perkuliahan. Apakah ada waktu untuk berdiskusi?\n\nTerima kasih sebelumnya.\n\nWassalam.",
+      "custom": "Assalamualaikum {nama_dosen},\n\nSelamat {waktu}. Saya {nama_mahasiswa} ({nim}).\n\nMohon maaf mengganggu, {detail_acara}\n\nTerima kasih sebelumnya.\n\nWassalam."
+    },
+    "santai": {
+      "izin_sakit": "Assalamualaikum {nama_dosen},\n\nSelamat {waktu}. Saya {nama_mahasiswa} ({nim}).\n\nMaaf ya {nama_dosen}, hari ini saya izin ga bisa ikut kuliah karena lagi sakit. Nanti saya susul materinya.\n\nMakasih banyak {nama_dosen}.",
+      "izin_acara": "Assalamualaikum {nama_dosen},\n\nSelamat {waktu}. Saya {nama_mahasiswa} ({nim}).\n\nMaaf {nama_dosen}, hari ini saya izin ga bisa hadir karena ada acara: {detail_acara}.\n\nNanti saya susul materinya ya. Makasih banyak.",
+      "ingatkan_matkul": "Assalamualaikum {nama_dosen},\n\nSelamat {waktu}. Saya {nama_mahasiswa} ({nim}).\n\nMaaf ganggu, mau tanya aja hari ini kuliahnya jadi kan ya?\n\nMakasih sebelumnya {nama_dosen}.",
+      "tanya_tugas": "Assalamualaikum {nama_dosen},\n\nSelamat {waktu}. Saya {nama_mahasiswa} ({nim}).\n\nMaaf ganggu, mau nanya soal tugas. Deadline-nya kapan ya? Dan ada ketentuan khusus ga?\n\nMakasih sebelumnya.",
+      "tanya_nilai": "Assalamualaikum {nama_dosen},\n\nSelamat {waktu}. Saya {nama_mahasiswa} ({nim}).\n\nMaaf ganggu, mau tanya soal nilai. Bisa konsultasi kapan ya?\n\nMakasih sebelumnya.",
+      "tanya_lokasi": "Assalamualaikum {nama_dosen},\n\nSelamat {waktu}. Saya {nama_mahasiswa} ({nim}).\n\nMaaf ganggu, {nama_dosen} lagi di kampus ga? Mau ketemu sebentar kalau boleh.\n\nMakasih ya.",
+      "jadwal_bimbingan": "Assalamualaikum {nama_dosen},\n\nSelamat {waktu}. Saya {nama_mahasiswa} ({nim}), anak bimbingan.\n\nMaaf ganggu, mau minta jadwal bimbingan. Kapan ada waktu luang?\n\nMakasih sebelumnya.",
+      "konsultasi_materi": "Assalamualaikum {nama_dosen},\n\nSelamat {waktu}. Saya {nama_mahasiswa} ({nim}).\n\nMaaf ganggu, mau konsultasi soal materi. Ada waktu ga untuk diskusi?\n\nMakasih sebelumnya.",
+      "custom": "Assalamualaikum {nama_dosen},\n\nSelamat {waktu}. Saya {nama_mahasiswa} ({nim}).\n\nMaaf ganggu, {detail_acara}\n\nMakasih sebelumnya."
+    }
+  }
+}
