@@ -2,6 +2,7 @@
 
 import React, { useState, useMemo } from "react";
 import { MessageCircle, Copy, Send, Check, Clock } from "lucide-react";
+import ReactGA from "react-ga4";
 import { Button } from "@/app/components/ui/Button";
 import {
   Card,
@@ -72,6 +73,14 @@ export default function ChatGenerator() {
     if (success) {
       setCopied(true);
       setTimeout(() => setCopied(false), 2000);
+
+      // Track copy event in Google Analytics
+      const purposeLabel = currentPurpose?.label || formData.purpose;
+      ReactGA.event({
+        category: "User Action",
+        action: "Copy Template",
+        label: purposeLabel,
+      });
     }
   };
 
