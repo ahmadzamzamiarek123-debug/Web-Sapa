@@ -1,3 +1,4 @@
 // Google Analytics 4 Configuration
-// Replace 'G-XXXXXXXXXX' with your actual GA4 Measurement ID
-export const GA_MEASUREMENT_ID = "G-41GFD4PVD8";
+// Use environment variable for production, fallback to this constant for development
+export const GA_MEASUREMENT_ID =
+  process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID || "G-41GFD4PVD8";
